@@ -1,8 +1,8 @@
 //
 //  IntroLayer.h
-//  CcWarFormation
+//  CcBoard
 //
-//  Created by Ian Fan on 20/03/13.
+//  Created by Ian Fan on 11/03/13.
 //  Copyright __MyCompanyName__ 2013. All rights reserved.
 //
 

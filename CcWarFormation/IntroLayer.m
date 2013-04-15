@@ -1,16 +1,15 @@
 //
 //  IntroLayer.m
-//  CcWarFormation
+//  CcBoard
 //
-//  Created by Ian Fan on 20/03/13.
+//  Created by Ian Fan on 11/03/13.
 //  Copyright __MyCompanyName__ 2013. All rights reserved.
 //
 
 
 // Import the interfaces
 #import "IntroLayer.h"
-#import "HelloWorldLayer.h"
-
+#import "WarFormationLayer.h"
 
 #pragma mark - IntroLayer
 
@@ -37,7 +36,7 @@
 -(void) onEnter
 {
 	[super onEnter];
-
+  /*
 	// ask director for the window size
 	CGSize size = [[CCDirector sharedDirector] winSize];
 
@@ -53,13 +52,13 @@
 
 	// add the label as a child to this Layer
 	[self addChild: background];
-	
+	*/
 	// In one second transition to the new scene
-	[self scheduleOnce:@selector(makeTransition:) delay:1];
+	[self scheduleOnce:@selector(makeTransition:) delay:0.0];
 }
 
 -(void) makeTransition:(ccTime)dt
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[HelloWorldLayer scene] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.0 scene:[WarFormationLayer scene] withColor:ccWHITE]];
 }
 @end
